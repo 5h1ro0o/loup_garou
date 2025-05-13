@@ -33,7 +33,7 @@ Pour lancer le serveur, exécutez simplement :
 
 ```bash
 python server.py
-
+```
 
 Fonctionnement du serveur TCP
 Le serveur démarre et écoute sur un port TCP.
