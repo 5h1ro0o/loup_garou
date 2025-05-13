@@ -32,17 +32,7 @@ Nous (Florian et Matteo) sommes responsables de :
 - **Sockets TCP/IP**
 - **Multithreading** (ou asyncio selon l'optimisation)
 - **gRPC** pour la communication avec les moteurs
-
----
-
-## 🛠️ Structure du dépôt
-
-loup_garou-main/
-├── game_logic.py # Logique du jeu de base (support)
-├── server.py # Implémentation du Serveur TCP (NOTRE PARTIE)
-├── README.md # Ce fichier
-└── pycache/ # Dossier de fichiers compilés (automatique)
-
+- 
 ---
 
 ## 🖥️ Fonctionnement de notre Serveur TCP
