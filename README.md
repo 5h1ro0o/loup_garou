@@ -1,7 +1,6 @@
 Projet Loup-Garou - Groupe 7 (Florian & Matteo)
-Bienvenue sur notre dépôt Git pour le projet Loup-Garou, développé dans le cadre de notre 3ᵉ année d’informatique.
 
-Notre mission : concevoir et mettre en place le serveur TCP, qui assure la communication entre les clients et les moteurs du jeu.
+le but est de concevoir et mettre en place le serveur TCP, qui assure la communication entre les clients et les moteurs du jeu.
 
 Description du projet
 Le projet "Loup-Garou" est une application distribuée composée de plusieurs modules qui interagissent ensemble :
