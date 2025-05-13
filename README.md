@@ -1,62 +1,63 @@
-# Projet Loup-Garou - Groupe 7 (Florian & Matteo)
+Projet Loup-Garou - Groupe 7 (Florian & Matteo)
+Bienvenue sur notre dépôt Git pour le projet Loup-Garou, développé dans le cadre de notre 3ᵉ année d’informatique.
 
-Bienvenue dans notre dépôt Git pour le projet **Loup-Garou** réalisé dans le cadre de notre 3ᵉ année d'informatique.
+Notre mission : concevoir et mettre en place le serveur TCP, qui assure la communication entre les clients et les moteurs du jeu.
 
-Notre mission au sein de ce projet consiste à développer le **Serveur TCP**, qui permet la communication entre les clients TCP et les moteurs du jeu.
+Description du projet
+Le projet "Loup-Garou" est une application distribuée composée de plusieurs modules qui interagissent ensemble :
 
----
+Clients : interfaces en TCP (terminal ou Tkinter) et en HTTP.
 
-## 📚 Description du projet global
+Serveurs : un serveur TCP (réalisé par notre groupe) et un serveur HTTP (groupe 3).
 
-Le projet "Loup-Garou" est une application distribuée basée sur plusieurs modules interconnectés :  
-- **Clients** : Interfaces utilisateur via TCP ou HTTP (terminal ou Tkinter).
-- **Serveurs** : Serveur TCP (groupe 7) et Serveur HTTP (groupe 3).
-- **Moteurs** : Moteur d'administration et moteur de jeu.
-- **Base de données** : SQLite3 pour stocker les informations essentielles.
+Moteurs : moteur d'administration et moteur de jeu.
 
----
+Base de données : SQLite3 pour stocker les informations importantes.
 
-## 🎯 Notre rôle - Groupe 7
+Notre rôle - Groupe 7
+Nous sommes chargés de :
 
-Nous (Florian et Matteo) sommes responsables de :
-- Développer un **Serveur TCP**.
-- Gérer les connexions multiples des clients TCP (interface Terminal ou Tkinter).
-- Faire transiter les requêtes entre les clients TCP et les moteurs (administration/jeu) via des communications réseau.
-- Assurer la robustesse du serveur : gestion des erreurs, des déconnexions, des requêtes simultanées.
+Développer le serveur TCP.
 
----
+Gérer les connexions simultanées des clients TCP.
 
-## 🔧 Technologies utilisées
+Faire transiter les requêtes entre les clients et les moteurs (administration et jeu).
 
-- **Python 3.10+**
-- **Sockets TCP/IP**
-- **Multithreading** (ou asyncio selon l'optimisation)
-- **gRPC** pour la communication avec les moteurs
-- 
----
+Rendre le serveur robuste : gestion des erreurs, des déconnexions et des requêtes en parallèle.
 
-## 🖥️ Fonctionnement de notre Serveur TCP
+Technologies utilisées
+Python 3.10+
 
-1. Le serveur démarre et écoute sur un port TCP défini.
-2. Les clients TCP (terminal ou interface graphique) se connectent au serveur.
-3. Le serveur reçoit les requêtes des clients.
-4. Il relaie les requêtes vers le moteur d'administration ou de jeu via gRPC.
-5. Il renvoie les réponses des moteurs aux clients correspondants.
+Sockets TCP/IP
 
-**Objectif principal** : garantir une communication fluide et fiable entre les clients et les moteurs.
+Multithreading (ou asyncio selon les besoins)
 
----
+gRPC pour la communication avec les moteurs
 
-## ⚙️ Lancer le serveur
+Démarrer le serveur
+Pour lancer le serveur, exécutez simplement :
 
-```bash
+bash
+Copier
+Modifier
 python server.py
-```
-Veillez à ce que les moteurs soient disponibles avant de lancer le serveur.
+Assurez-vous que les moteurs sont démarrés avant de lancer le serveur.
 
-📜 Schéma d'architecture générale
+Fonctionnement du serveur TCP
+Le serveur démarre et écoute sur un port TCP.
 
-✨ Auteurs
+Les clients (en terminal ou via interface graphique) se connectent.
+
+Le serveur reçoit leurs requêtes.
+
+Il les transmet au moteur concerné via gRPC.
+
+Il renvoie ensuite la réponse du moteur au bon client.
+
+L’objectif est de maintenir une communication fluide et fiable entre les clients et les moteurs.
+
+Auteurs
 Florian (Groupe 7)
 
 Matteo (Groupe 7)
+
